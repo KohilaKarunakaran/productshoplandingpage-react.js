@@ -1,0 +1,35 @@
+:root {
+    --about-bg-color: cornsilk;
+    --heading-color: red;
+  }
+.about {
+    background-color: var(--about-bg-color);
+    margin-bottom: 50px;
+    overflow-x: hidden;
+    height: 500px;
+}
+.about p {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about .heading{
+    text-align: center;
+    color: var(--heading-color);
+    font-size: 40px;
+    line-height: 50px;
+    padding-top: 20px;
+    margin-bottom: 100px;
+}
+.about .content {
+    font-size: 30px;
+    margin-top: -50px;
+}
+@media (max-width: 280px) {
+    .about .content {
+    font-size: 25px;
+    }
+}

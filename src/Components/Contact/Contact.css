@@ -1,0 +1,92 @@
+:root {
+    --contact-bg-color: cornsilk;
+    --heading-color: red;
+  }
+.contact {
+    margin: 0px 0px 50px 0px;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow: hidden;
+    background-color: var(--contact-bg-color);
+}
+.contact .heading{
+    text-align: center;
+    color: var(--heading-color);
+    font-size: 40px;
+    line-height: 50px;
+    padding-bottom: 0px;
+}
+
+.contact .leftContainer {
+    display: flex;
+    height: 600px;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact .rightContainer {
+    display: flex;
+    height: 600px;
+    flex: 1;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.contact .map {
+    width: 600px;
+    height:600px;
+    padding-right: 50px;
+}
+.addressContainer {
+    height: 150px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+.phNumContainer {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    width: 200px;
+    padding-left: 30px;
+}
+#phoneNumber {
+    margin-top: -20px;
+    margin-left: 20px;
+}
+.openHrContainer {
+    height: 300px;
+    display: flex;
+    padding-top: 10px;
+    flex-direction: column;
+    width: 200px;
+}
+#days {
+    padding-right: 10px;
+}
+
+@media (max-width: 1024px){
+    .contact {
+        min-height: 60vh;
+    }
+    .contact .rightContainer {
+        margin-left: 50px;
+}
+}
+
+@media screen and (min-width: 280px) and (max-width: 541px) {
+    .contact .rightContainer {
+        margin-left: 0px;
+}
+.contact .map {
+    height: 500px;
+    margin-top: -100px;
+}
+}

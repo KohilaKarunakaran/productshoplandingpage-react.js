@@ -1,0 +1,145 @@
+:root {
+    --card-bg-color: rgb(185, 233, 242);
+    --card-text-color: rgb(7, 7, 7);
+  }
+.hero {
+    min-height: 100vh;
+    background: url("https://th.bing.com/th/id/R.0b29898168df349f442fd376722938b5?rik=mSQbWWAbih70gQ&riu=http%3a%2f%2fimages.designtrends.com%2fwp-content%2fuploads%2f2015%2f11%2f17061911%2fWhite-Abstract-Plain-Background.jpg&ehk=FYQNunb5XLs9hoUZJc0ohHpTWbCtKIBo03pkDJLsrTI%3d&risl=&pid=ImgRaw&r=0");
+    background-size: cover;
+    background-position: center;
+    color: var(--card-text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.hero .hero-text {
+    text-align: center;
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.hero .products-list {
+    width: 1200px;
+    min-height: 730px;
+    overflow: hidden;
+}
+
+.hero .cards {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 100%;
+    background-color: var(--card-bg-color);
+}
+
+.hero .card-img-top {
+    height: 280px;
+    border-radius: 10px;
+}
+
+.hero .card-img-top img {
+    height: 280px;
+    width: 350px;
+    border-radius: 10px;
+}
+
+.hero .card-body {
+    height: 190px;
+}
+
+.hero .card-body .card-title {
+    height: 70px;
+    margin-top: 10px;
+}
+
+.hero .card-body .price {
+    font-size: 25px;
+}
+
+.hero .card-body .btn {
+   margin-top: 25px;
+}
+
+.hero .slick-slide>div {
+    margin: 0 10px;
+    width: 352px;
+}
+
+
+@media (max-width: 1024px) {
+    .hero {
+        min-height: 80vh;
+    }
+    .hero .products-list {
+        min-height: 730px;
+        padding-top: 80px;
+        width: 800px;
+        padding-left: 15px;
+    }
+
+}
+
+@media (max-width: 912px) {
+    .hero .products-list {
+        width: 800px;
+        padding-left: 15px;
+        padding-top: 100px;
+        height: 700px;
+        margin-top: -200px;
+    }
+
+}
+
+
+@media (max-width: 540px) {
+    .hero .products-list {
+        width: 400px;
+        padding-left: 15px;
+    }
+
+    .hero {
+        min-height: 90vh;
+
+    }
+}
+
+@media (max-width: 280px) {
+    .hero .products-list {
+        width: 280px;
+        padding-left: 30px;
+    }
+    .hero { 
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .hero .cards {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        height: 70%;
+    }
+
+    .hero .card-img-top {
+        height: 200px;
+        border-radius: 10px;
+    }
+
+    .hero .card-img-top img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .hero .card-body {
+        height: 170px;
+    }
+
+    .hero .card-body .card-title {
+        height: 50px;
+    }
+
+    .hero .slick-slide>div {
+        width: 200px;
+        margin: 0 10px;
+    }
+
+}

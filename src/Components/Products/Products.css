@@ -1,0 +1,233 @@
+:root {
+    --btn-bg-color: coral;
+    --heading-color: red;
+  }
+.products-list {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 50px 150px;
+    margin-bottom: -50px;
+    overflow-x: hidden;
+    margin-left: 50px;
+    margin-right: 50px;
+    overflow-y: hidden;
+    overflow: hidden;
+    padding-bottom: 150px;
+}
+
+.products .heading {
+    text-align: center;
+    color: var(--heading-color);
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 50px;
+}
+
+.products-list .card {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 100%;
+    border: none;
+}
+
+.products .card-img-top {
+    height: 150px;
+    border-radius: 10px;
+}
+
+.products .card-img-top img {
+    height: 100px;
+    border-radius: 10px;
+
+}
+
+.products .card-body {
+    height: 100px;
+}
+
+.products .card-body .card-title {
+    height: 55px;
+    font-weight: 500;
+
+}
+
+.products .card-body .price {
+    font-size: 15px;
+}
+
+.products .card-body .btn {
+    margin-bottom: 10px;
+    margin-left: 40px;
+    background-color: var(--btn-bg-color);
+    border: none;
+}
+
+.products .more {
+    padding: 10px 5px;
+    float: right;
+    margin-right: 100px;
+    margin-top: -50px;
+}
+
+@media (max-width: 1280px) {
+    .products .more {
+        margin-right: 50px;
+        margin-top: -350px;
+    }
+    .products-list {
+        grid-gap: 50px 130px;
+        margin-bottom: 100px;
+        margin-left: 20px;
+        margin-right: 10px;
+        padding-bottom: 50px;
+    }
+    .products .card-body .btn {
+        margin-left: 25px;
+    }
+}
+
+@media (max-width: 1025px) {
+    .products-list {
+        grid-gap: 50px 50px;
+        margin-bottom: 100px;
+        padding-bottom: 50px;
+    }
+
+    .products .more {
+        max-width: 150px;
+        margin-right: 400px;
+    }
+    .products .card-body .btn {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 912px) {
+    .products-list {
+        grid-gap: 40px 50px;
+        overflow: hidden;
+        padding-bottom: 50px;
+    }
+
+    .products .card-body .btn {
+        margin-left: 25px;
+    }
+
+    .products .more {
+        margin-right: 20px;
+        margin-top: -300px;
+
+    }
+}
+@media (max-width: 854px) {
+    .products .more {
+        margin-right: 40px;
+        margin-top: -300px;
+    }
+    .products .card-body .btn {
+        margin-left: 10px;
+    }
+    .products-list {
+        grid-gap: 40px 50px;
+    }
+}
+@media (max-width: 820px) {
+    .products-list {
+        grid-gap: 40px 50px;
+    }
+    .products .card-body .btn {
+        margin-left: 10px;
+    }
+    .products .more {
+        margin-right: 25px;
+        margin-top: -300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .products-list {
+        grid-gap: 40px 50px;
+    }
+
+    .products .card-body .btn {
+        margin-left: 35px;
+    }
+
+    .products .more {
+        margin-right: 250px;
+    }
+}
+
+@media (max-width: 540px) {
+    .products-list {
+        grid-gap: 40px 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .products .card-body .btn {
+        margin-left: 10px;
+    }
+
+    .products .more {
+        margin-right: 100px;
+        margin-top: -300px;
+    }
+}
+
+@media screen and (min-width: 358px) and (max-width: 432px) {
+    .products-list {
+        grid-gap: 40px 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .products .card-body .btn {
+        margin-left: 25px;
+    }
+
+    .products .more {
+        padding: 0px 2px;
+        margin-right: 20px;
+    }
+}
+
+
+@media (max-width: 376px) {
+    .products .card-body .btn {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .products .more {
+        margin-right: 20px;
+        margin-top: -300px;
+    }
+    .products-list {
+        grid-gap: 50px 10px;
+        padding-bottom: -10px;
+    }
+}
+
+@media (max-width: 391px) {
+    .products .card-body .btn {
+        margin-right: 10px;
+        margin-left: 20px;
+    }
+}
+@media (max-width: 280px) {
+    .products-list {
+        grid-gap: 40px 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .products .card-body .btn {
+        margin-left: 40px;
+    }
+
+    .products .more {
+        margin-right: 55px;
+        margin-top: -70px;
+    }
+}
